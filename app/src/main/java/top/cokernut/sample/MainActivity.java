@@ -120,6 +120,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         return false;
     }
 
+    /**
+     * 前往设置界面开启服务
+     */
     private void startAccessibilityService() {
         new AlertDialog.Builder(this)
                 .setTitle("开启辅助功能")

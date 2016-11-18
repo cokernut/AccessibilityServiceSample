@@ -32,15 +32,6 @@
             android:padding="30dp"
             android:text="安装Btn" />
 
-        <TextView
-            android:id="@+id/tv_next"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:padding="30dp"
-            android:background="#00AA66"
-            android:layout_margin="10dp"
-            android:text="下一步TV" />
-
         <Button
             android:id="@+id/bt_next"
             android:layout_width="wrap_content"

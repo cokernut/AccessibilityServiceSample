@@ -37,31 +37,16 @@ public class MyService extends AccessibilityService {
                     case INSTALL:
                         click(event, "安装", TextView.class.getName());
                         Log.d("test=======", "安装");
-                        try {
-                            Thread.sleep(Toast.LENGTH_SHORT);
-                        } catch (InterruptedException e) {
-                            e.printStackTrace();
-                        }
                         code = NEXT;
                         break;
                     case NEXT:
                         click(event, "下一步", Button.class.getName());
                         Log.d("test=======", "下一步");
-                        try {
-                            Thread.sleep(Toast.LENGTH_SHORT);
-                        } catch (InterruptedException e) {
-                            e.printStackTrace();
-                        }
                         code = FINISH;
                         break;
                     case FINISH:
                         click(event, "完成", TextView.class.getName());
                         Log.d("test=======", "完成");
-                        try {
-                            Thread.sleep(Toast.LENGTH_SHORT);
-                        } catch (InterruptedException e) {
-                            e.printStackTrace();
-                        }
                         code = INSTALL;
                         break;
                     default:

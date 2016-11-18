@@ -19,7 +19,6 @@ import java.util.List;
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
     private TextView mInstallTV;
-    private TextView mNextTV;
     private TextView mFinishTV;
     private TextView mStartTV;
     private TextView mStopTV;
@@ -34,14 +33,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         mInstallTV      = (TextView) findViewById(R.id.tv_install);
-        mNextTV         = (TextView) findViewById(R.id.tv_next);
         mStartTV        = (TextView) findViewById(R.id.tv_start);
         mStopTV         = (TextView) findViewById(R.id.tv_stop);
         mFinishTV       = (TextView) findViewById(R.id.tv_finish);
         mInstallBT      = (Button) findViewById(R.id.bt_install);
         mNextBT         = (Button) findViewById(R.id.bt_next);
         mInstallTV      .setOnClickListener(this);
-        mNextTV         .setOnClickListener(this);
         mFinishTV       .setOnClickListener(this);
         mInstallBT      .setOnClickListener(this);
         mNextBT         .setOnClickListener(this);
@@ -69,9 +66,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 startActivity(new Intent(MainActivity.this, SecondActivity.class));
                 break;
             case R.id.tv_install:
-                showToast(((TextView)v).getText().toString());
-                break;
-            case R.id.tv_next:
                 showToast(((TextView)v).getText().toString());
                 break;
             case R.id.tv_finish:

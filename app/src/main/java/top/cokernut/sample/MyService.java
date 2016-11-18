@@ -31,7 +31,7 @@ public class MyService extends AccessibilityService {
                          #TYPE_VIEW_FOCUSED ：获取焦点
                          #TYPE_VIEW_TEXT_CHANGED ：文字改变
                          #TYPE_WINDOW_STATE_CHANGED ：窗口状态改变
-                         #TYPE_NOTIFICATION_STATE_CHANGED
+                         #TYPE_NOTIFICATION_STATE_CHANGED ：通知状态改变
                          #TYPE_VIEW_HOVER_ENTER
                          #TYPE_VIEW_HOVER_EXIT
                          #TYPE_TOUCH_EXPLORATION_GESTURE_START

@@ -26,8 +26,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private Button mInstallBT;
     private Button mNextBT;
 
-    private int num = 0;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -49,7 +47,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     @Override
     protected void onRestart() {
         super.onRestart();
-        num = 0;
     }
 
     @Override
@@ -70,10 +67,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
             case R.id.tv_finish:
                 showToast(((TextView)v).getText().toString());
-                num++;
-                if (num > 5) {
-                    startActivity(new Intent("top.cokernut.sample.SecondActivity"));
-                }
                 break;
             case R.id.bt_install:
                 showToast(((Button)v).getText().toString());
@@ -93,7 +86,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             @Override
             public void run() {
                 Toast.makeText(MainActivity.this, "点击了" + text, Toast.LENGTH_LONG).show();
-                Log.d("text=====", num + "=====" + text);
+                Log.d("text=====", "=====" + text);
             }
         });
     }
